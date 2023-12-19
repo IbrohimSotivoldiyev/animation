@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  body{
+    background-color: lightblue;
+  }
+  .cloud{
+   
+
+     animation: cloud 10s ease infinite;
+  }
+  .cloud:nth-child(2){
+ 
+   
+    animation: cloud 20s ease infinite;
+
+  }
+ 
+   .mario{position: relative;
+    animation-direction: alternate;
+    animation: mario 20s ease infinite;
+   }
+   .bike{
+    position: absolute;
+    left: 0px;
+    top: 300px;
+    animation-direction: alternate;
+    animation: bike 17s ease infinite;
+     
+   }
+
+  @keyframes cloud{
+     from{
+        transform: translateX(-200px);
+     }
+     to{
+        transform:translateX(1700px) ;
+     }
+  }
+  @keyframes bike{
+    from{
+       transform: translateX(-200px);
+    }
+    to{
+       transform:translateX(1700px) ;
+    }
+ }
+  @keyframes mario{
+    from{
+       transform: translateX(2000px);
+    }
+    to{
+       transform:translateX(-1700px) ;
+    }
+ }
+ div{
+    width: 100%;
+    height: 550px;
+    background-color: gray;
+ }
+ .line{
+     height: 10px;
+     border: 10px dashed white;
+     position: absolute;
+     right: 0;
+     left: 0;
+     margin: auto 0;
+     bottom: 0px;
+     top: 130px;
+ }
